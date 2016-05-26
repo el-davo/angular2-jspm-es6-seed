@@ -6,6 +6,9 @@ module.exports = (gulp, $) => {
 
     function ui(cb) {
 
+        console.log('Updating webdriver, This may take a while');
+        $.syncExec('node ./node_modules/protractor/bin/webdriver-manager update');
+
         let bs = $.browserSync({
             server: {
                 baseDir: './',
@@ -23,7 +26,7 @@ module.exports = (gulp, $) => {
         }, function (status) {
             bs.exit();
             cb();
-            //process.exit(status);
+            process.exit(status);
         });
     }
 };

@@ -9,6 +9,7 @@ let gulp = require('gulp'),
             'gulp-tslint',
             'browser-sync',
             'protractor-flake',
+            'sync-exec',
             'del'
         ],
         lazy: true

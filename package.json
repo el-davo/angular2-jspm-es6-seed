@@ -70,6 +70,7 @@
     "protractor": "^3.3.0",
     "protractor-flake": "^1.0.5",
     "require-directory": "^2.1.1",
+    "sync-exec": "^0.6.2",
     "tslint": "^3.10.2"
   }
 }
