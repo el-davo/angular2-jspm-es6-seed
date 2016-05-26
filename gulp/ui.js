@@ -6,7 +6,7 @@ module.exports = (gulp, $) => {
 
     function ui(cb) {
 
-        $.util.log($.util.colors.green('Checking webdriver, This may take a while'));
+        $.util.log($.util.colors.green('Checking webdriver, This may take a while if no webdriver is found'));
         $.syncExec('node ./node_modules/protractor/bin/webdriver-manager update');
 
         let bs = $.browserSync({
